@@ -1,0 +1,186 @@
+%-------------------------
+% FAANG-Style ATS Resume — Jayant Kumar
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{microtype}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting: caps, bold, ruled
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule\vspace{-4pt}]
+
+\pdfgentounicode=1
+
+%--------------------------
+% Custom Commands
+%--------------------------
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & \textbf{\small #2}\\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\Huge \scshape Jayant Kumar} \\[3pt]
+  \small
+  \raisebox{-0.1\height}{\faPhone}\ +91-87085-48651 \enspace$|$\enspace
+  \href{mailto:Jayantgahlawat@gmail.com}{\raisebox{-0.15\height}{\faEnvelope}\ \underline{Jayantgahlawat@gmail.com}} \enspace$|$\enspace
+  \href{https://linkedin.com/in/jayant-gahlawat-07980a32a}{\raisebox{-0.15\height}{\faLinkedin}\ \underline{linkedin.com/in/jayant-gahlawat}} \enspace$|$\enspace
+  \href{https://github.com/Drifting-Moon}{\raisebox{-0.15\height}{\faGithub}\ \underline{github.com/Drifting-Moon}}
+\end{center}
+\vspace{-10pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Manipal University Jaipur}{Aug 2024 -- May 2028}
+    {B.Tech in Computer Science and Engineering \textnormal{--- CGPA: \textbf{8.98 / 10.0}}}{Jaipur, Rajasthan}
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt]
+  \small{
+    \item \textbf{Languages:} C,C++,JavaScript, TypeScript, Python, Java, SQL, HTML, CSS
+    \item \textbf{Frameworks \& Libraries:} React 18, Tailwind CSS v4, Vite, lightweight-charts
+    \item \textbf{Tools \& Platforms:} Git, GitHub, VS Code, Linux
+    \item \textbf{Relevant Coursework:} Data Structures \& Algorithms, OOP, Database Management Systems, Operating Systems
+  }
+\end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-4pt}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{CommunityPulse --- AI Crisis Intelligence Platform} \enspace
+   \emph{Gemini 2.0, Python, React, PWA} \enspace
+    \href{https://github.com/krish230506-png/CommunityPulse}{{\small\faGithub} \underline{GitHub}}}{2026}
+\resumeItemListStart
+  \resumeItem{Built an AI-native disaster response platform for Google Solution Challenge 2026 using a Gemini 2.0 Flash agentic pipeline to process multimodal inputs (voice, images, text) into a real-time crisis map.}
+  \resumeItem{Reduced dispatch latency from 45+ min to under 120 sec via Haversine geofencing; applied vector embeddings to deduplicate reports into prioritized Crisis Events (0--100 score).}
+  \resumeItem{Architected an Offline-First PWA with 2G/3G background sync and 6+ Indian language support for operability in connectivity-dead disaster zones.}
+\resumeItemListEnd
+\vspace{-10pt}
+
+\resumeProjectHeading
+  {\textbf{Quantis --- Backtesting \& Portfolio Engine} \enspace
+   \emph{JavaScript, Python, React, Tailwind CSS v4} \enspace
+   \href{https://github.com/Drifting-Moon/Quantis}{{\small\faGithub} \underline{GitHub}}}{2025}
+\resumeItemListStart
+  \resumeItem{Engineered a full-stack financial backtesting platform simulating investment strategies against historical market data with live ``what-if'' scenario visualization.}
+  \resumeItem{Authored a custom XIRR engine in Python for time-weighted returns on irregular cash flows; integrated Yahoo Finance API and CSV upload for multi-source portfolio construction.}
+  \resumeItem{Built a ``Step Strategy'' engine automating SIP simulations with click-to-invest interactions on \texttt{lightweight-charts} financial charts.}
+\resumeItemListEnd
+\vspace{-10pt}
+
+\resumeProjectHeading
+  {\textbf{Canvas --- Interactive Sticky-Note Board} \enspace
+   \emph{React 18, TypeScript, Vite} \enspace
+   \href{https://github.com/Drifting-Moon/Canvas-Tree}{{\small\faGithub} \underline{GitHub}}}{2025}
+\resumeItemListStart
+  \resumeItem{Built a minimalist sticky-note web app with drag-and-drop, per-note resizing, dynamic color assignment, and \texttt{localStorage} persistence --- structured with React 18, TypeScript, and Vite.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, itemsep=4pt]
+  \small{
+    \item \textbf{Design and Analysis of Algorithms} \textnormal{--- NPTEL, IIT Madras} \hfill \textit{Jan -- Mar 2026}\\[1pt]
+    \textnormal{8-week course covering divide \& conquer, greedy algorithms, dynamic programming, and complexity analysis.}
+
+    \item \textbf{Generative AI: Introduction and Applications} \textnormal{--- IBM, Coursera} \hfill \textit{Feb 2026}\\[1pt]
+    \textnormal{Foundations of generative AI, large language models, and real-world AI application design.}
+
+    \item \textbf{Data Structures and Algorithms using Java} \textnormal{--- NPTEL, IIT Kharagpur} \hfill \textit{Jul -- Oct 2025}\\[1pt]
+    \textnormal{12-week course covering sorting, searching, trees, graphs, and dynamic programming in Java.}
+  }
+\end{itemize}
+\vspace{-8pt}
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in, itemsep=2pt]
+  \small{
+    \item \textbf{Competitive Programming:} Solved \textbf{125+ problems} on
+    \href{https://leetcode.com/u/Red_Daoist/}{\underline{LeetCode (Red\_Daoist)}} and
+    \href{https://www.geeksforgeeks.org/profile/jayantga25gi}{\underline{GeeksforGeeks (jayantga25gi)}} ---
+    including \textbf{53 Medium} and \textbf{7 Hard} --- spanning Arrays, Binary Search, HashMaps \& Sets,
+    Two Pointers, Sorting, and Divide \& Conquer.
+
+    \item \textbf{Dean's List --- Semester 2:} Recognized among top academic performers at Manipal University Jaipur for the batch of 2028.
+  }
+\item \textbf{Google Solution Challenge 2026:} Built and deployed \textit{CommunityPulse}, an AI-native disaster response platform using a Gemini 2.0 Flash agentic pipeline --- reducing volunteer dispatch latency from 45+ minutes to under 120 seconds.
+
+\end{itemize}
+
+
+\end{document}
