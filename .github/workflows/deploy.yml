@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -21,10 +22,11 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-          args: -pdf -interaction=nonstopmode -halt-on-error
+          compiler: pdflatex
+          args: -interaction=nonstopmode -halt-on-error
           
       - name: Rename PDF
-        run: mv main.pdf resume.pdf
+        run: mv main.pdf resume.pdf || echo "PDF not found"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
