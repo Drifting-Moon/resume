@@ -1,0 +1,12 @@
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.pdf
+*.gz
+*.fdb_latexmk
+*.fls
+
+# OS
+.DS_Store
