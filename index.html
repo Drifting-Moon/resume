@@ -3,121 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jayant Kumar | CS & AI Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Jayant Kumar | Resume</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: #525659;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .fallback {
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        a { color: #818cf8; text-decoration: none; font-weight: bold; }
+    </style>
 </head>
 <body>
-    <div class="background-glow"></div>
-    
-    <nav>
-        <div class="nav-container">
-            <span class="logo">./jayant_kumar</span>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-            </div>
-            <a href="resume.pdf" class="btn btn-primary" target="_blank">View PDF</a>
+    <iframe src="resume.pdf">
+        <div class="fallback">
+            <p>Your browser does not support embedded PDFs.</p>
+            <p><a href="resume.pdf">Download PDF Instead</a></p>
         </div>
-    </nav>
-
-    <header id="about">
-        <div class="container">
-            <div class="hero">
-                <p class="status-badge">Available for 2028 Opportunities</p>
-                <h1>Jayant Kumar</h1>
-                <p class="subtitle">B.Tech in Computer Science & Engineering <br> <span>Manipal University Jaipur | CGPA: 8.98</span></p>
-                
-                <div class="terminal-header">
-                    <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
-                    <span class="terminal-title">contact_info.sh</span>
-                </div>
-                <div class="terminal-body">
-                    <p><span class="prompt">$</span> email --send <a href="mailto:Jayantgahlawat@gmail.com">Jayantgahlawat@gmail.com</a></p>
-                    <p><span class="prompt">$</span> github --open <a href="https://github.com/Drifting-Moon" target="_blank">Drifting-Moon</a></p>
-                    <p><span class="prompt">$</span> linkedin --connect <a href="https://linkedin.com/in/jayant-gahlawat" target="_blank">jayant-gahlawat</a></p>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Critical Systems & Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card featured">
-                    <div class="project-info">
-                        <h3>CommunityPulse</h3>
-                        <p class="project-tagline">AI Crisis Intelligence Platform (Google Solution Challenge '26)</p>
-                        <p class="description">Built an AI-native disaster response platform using Gemini 2.0 Flash. Reduced dispatch latency from 45+ min to &lt;120 sec via Haversine geofencing.</p>
-                        <div class="tech-stack">
-                            <span>Gemini 2.0</span> <span>Python</span> <span>React</span> <span>PWA</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Quantis</h3>
-                        <p class="project-tagline">Backtesting & Portfolio Engine</p>
-                        <p class="description">Full-stack financial simulation engine with custom XIRR calculation and Yahoo Finance API integration.</p>
-                        <div class="tech-stack">
-                            <span>React</span> <span>Python</span> <span>Tailwind v4</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Canvas</h3>
-                        <p class="project-tagline">Interactive Sticky-Note Board</p>
-                        <p class="description">Minimalist sticky-note web app with drag-and-drop, per-note resizing, and localStorage persistence.</p>
-                        <div class="tech-stack">
-                            <span>TypeScript</span> <span>React 18</span> <span>Vite</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <div class="container">
-            <div class="skills-wrapper">
-                <div class="skill-group">
-                    <h4>Core Languages</h4>
-                    <ul>
-                        <li>C/C++</li>
-                        <li>JavaScript/TypeScript</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="skill-group">
-                    <h4>Frameworks</h4>
-                    <ul>
-                        <li>React 18</li>
-                        <li>Tailwind v4</li>
-                        <li>Vite</li>
-                        <li>lightweight-charts</li>
-                    </ul>
-                </div>
-                <div class="skill-group">
-                    <h4>Certifications</h4>
-                    <p>IIT Madras (DAA), IBM (GenAI), IIT Kharagpur (DSA)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>Jayant Kumar &copy; 2026 | Built with JetBrains Mono & Outfit</p>
-        </div>
-    </footer>
+    </iframe>
 </body>
 </html>
